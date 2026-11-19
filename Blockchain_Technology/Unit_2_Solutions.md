@@ -3,7 +3,6 @@
 ### Complete Examination Solutions Guide (Engineered for Full 8/8 Marks)
 
 ---
-
 ## Q1. What is cryptocurrency? Explain in detail and discuss the relevance of Crypto Usage with an example. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -47,7 +46,7 @@ Remittance Efficiency Advantage: Cost_Crypto = Fixed_Network_Fee ≪ Cost_SWIFT 
 Bitcoin Divisibility Bound: 1 BTC = 10^8 Satoshis (Smallest unit = 0.00000001 BTC)
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above formalize asymmetric cryptographic digital signatures and the comparative cost reduction of blockchain remittances. The ECDSA signing function generates a verifiable digital signature from a private key and message hash, allowing any network node to verify transaction authenticity using the public key. The remittance equation demonstrates how eliminating intermediary correspondent banking chains reduces transaction fees from traditional retail rates down to minimal network miner fees.
 
 ### Worked Example & Practical Simulation
 
@@ -69,7 +68,6 @@ Real-**World Cross**-Border Remittance **Scenario** (**India** to **Philippines*
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Cryptocurrency Ecosystem and Usage Relevance', pp. 55-78.
 
 ---
-
 ## Q2. Enlist and explain the types of cryptocurrency, and justify if cryptocurrency is safe. (Frequency: 6) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -113,7 +111,7 @@ Stablecoin Over-Collateralization Ratio: CR = ( Value_of_Collateral_Locked / Val
 51% Attack Cost Barrier: Cost_51% = ( 0.51 · Hashrate_global · Power_Consumption · Cost_per_kWh ) > Billions of USD
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical thresholds defined above establish the cryptographic security margins of modern cryptocurrencies against brute-force attacks. With an asymmetric keyspace of $2^{256}$ combinations (exceeding the total number of atoms in the observable universe), inverting a private key through brute-force computation is physically impossible under known laws of thermodynamics. Furthermore, SHA-256 preimage resistance bounds collision probability to negligible levels, guaranteeing ledger immutability and mathematical safety.
 
 ### Worked Example & Practical Simulation
 
@@ -135,7 +133,6 @@ Analyzing the **Safety Profile** of a Real-World Cryptocurrency Incident: • Th
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Cryptocurrency Types, Ecosystem Players, and Safety Aspects', pp. 60-85.
 
 ---
-
 ## Q3. What is Bitcoin? Explain in detail or write a note on it. (Frequency: 3) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -179,7 +176,7 @@ Difficulty Adjustment Ratio (Every 2,016 Blocks):
 Difficulty_new = Difficulty_old · ( 20,160 Minutes / Actual_Time_Last_2016_Blocks )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above define the algorithmic scarcity, geometric block reward halving, and hashrate security of Bitcoin. The total issuance limit is bounded by a geometric series that halves every 210,000 blocks, asymptotically capping circulating supply at 21 million BTC. Network security is quantified by total cumulative work, proving that reorganizing historical blocks requires commanding more than 50% of the entire global computational hashrate.
 
 ### Worked Example & Practical Simulation
 
@@ -201,7 +198,6 @@ Step-by-**Step Anatomy** of a Bitcoin **Transaction** (Alice to Bob): • Pre-**
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 1: 'The Bitcoin and the Blockchain', pp. 4-22.
 
 ---
-
 ## Q4. Describe Tokens in detail with an example. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -245,7 +241,7 @@ require( balanceOf[msg.sender] ≥ amount );
 balanceOf[msg.sender] = balanceOf[msg.sender] - amount;
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical invariants defined above govern state storage and token balance transfers in smart contract token standards such as ERC-20. The ledger relies on a persistent hash map associating account addresses with unsigned 256-bit integer balances. The transfer function enforces a strict balance conservation invariant: the sender's balance is decremented by the exact transfer amount while the recipient's balance is incremented, preventing unauthorized token minting or double spending.
 
 ### Worked Example & Practical Simulation
 
@@ -267,7 +263,6 @@ Deploying and Executing an ERC-20 Token on **Ethereum** (USDT **Stablecoin Trans
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Cryptocurrency Tokens & The ERC-20 Architecture', pp. 78-95.
 
 ---
-
 ## Q5. Describe Zero coin and its successor Zero cash in detail. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -311,7 +306,7 @@ Proof Generation: Proof π = Prove( pk, Public_Input_x, Secret_Witness_w )
 Verification Decision: Verify( vk, Public_Input_x, Proof π ) ∈ { True, False }
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above formalize non-interactive zero-knowledge succinct arguments of knowledge (zk-SNARKs) in privacy cryptocurrencies like Zerocash. The cryptographic tuple enables a prover to mathematically prove that a private transaction satisfies balance and signature validity constraints without revealing sender, recipient, or transfer amounts. The verification equation evaluates pairing functions across elliptic curves, executing in deterministic sub-second time.
 
 ### Worked Example & Practical Simulation
 
@@ -333,7 +328,6 @@ Shielded **Transaction** Execution on the **Zcash** (**Zerocash**) **Blockchain*
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Privacy-Preserving Cryptocurrencies: Zerocoin and Zerocash', pp. 92-108.
 
 ---
-
 ## Q6. Explain crypto wallets in detail and list their types. (Frequency: 4) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -377,7 +371,7 @@ Elliptic Curve Point Multiplication: Public_Key K = Private_Key k · Base_Point 
 Bitcoin Address Hash Pipeline: Address = Base58Check( Version_Byte ∥ RIPEMD160( SHA256( Public_Key K ) ) )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical pipeline defined above details deterministic key generation under the BIP-39 and BIP-32/BIP-44 standards. High-entropy random integers are concatenated with a cryptographic checksum to generate human-readable mnemonic seed words. Applying the PBKDF2 key-stretching function produces a master seed, which hierarchical deterministic derivation paths expand into millions of distinct, mathematically linked public/private key pairs from a single backup phrase.
 
 ### Worked Example & Practical Simulation
 
@@ -399,7 +393,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Cryptocurrency Wallets, Key Generation, and Security Mechanisms', pp. 82-105.
 
 ---
-
 ## Q7. What is Metamask? Illustrate it in detail, discuss its applications, and explain its importance, benefits, and drawbacks. (Frequency: 6) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -443,7 +436,7 @@ Total Transaction Execution Cost: Max_Cost = ( Gas_Limit · Max_Fee_Per_Gas ) + 
 EIP-1559 Dynamic Fee: Effective_Gas_Price = Base_Fee + min( Priority_Fee, Max_Fee - Base_Fee ) }
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical models defined above define client-side Web3 provider injection and dynamic gas estimation in browser extension wallets like MetaMask. The provider intercepts decentralized application JSON-RPC calls, dynamically calculating estimated gas usage from transaction bytecode and network congestion. Transactions are cryptographically signed locally using client-side private keys before broadcast, ensuring that sensitive signing keys never traverse external networks.
 
 ### Worked Example & Practical Simulation
 
@@ -465,7 +458,6 @@ Executing a **Token Swap** on Uniswap DApp using MetaMask: • Step 1: User visi
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Web3 Wallets: Architecture and Applications of MetaMask', pp. 98-115.
 
 ---
-
 ## Q8. Differentiate/Compare Coinbase and Binance. (Frequency: 6) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -509,7 +501,7 @@ Coinbase Standard Retail Spread: Fee_Coinbase = Volume · ( Spread_Rate ≈ 0.50
 Cold Storage Vault Invariant: Assets_Cold / ( Assets_Cold + Assets_Hot ) ≥ 98%
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above formalize cryptocurrency exchange fee models and order-book liquidity mechanics. Trading fees are dynamically computed based on maker-taker volume tiers, incentivizing liquidity provision through discounted maker fees. The order-matching engine evaluates depth and slippage across bid-ask spreads, determining effective execution prices and clearing trades against resting limit orders with deterministic algorithmic precision.
 
 ### Worked Example & Practical Simulation
 
@@ -531,7 +523,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Centralized Crypto Exchanges: Coinbase vs Binance Analysis', pp. 110-135.
 
 ---
-
 ## Q9. Write a note on Coinbase. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -575,7 +566,7 @@ Merkle Tree Proof of Reserves: Root_Hash = Hash( Node_Left ∥ Node_Right )
 Cryptographic Solvency Rule: On_Chain_Custody_Reserves ≥ Total_Customer_Liabilities
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above define institutional cryptocurrency custody policies and Proof of Reserves auditability. Regulated custodians enforce strict asset allocation invariants, maintaining over 98% of total client digital assets in offline, geographically distributed air-gapped cold storage vaults. Multi-signature threshold schemes ($M\text{-of-}N$) require multiple cryptographic approvals for withdrawals, eliminating single points of failure across institutional asset reserves.
 
 ### Worked Example & Practical Simulation
 
@@ -597,7 +588,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Centralized Crypto Exchanges: The Architecture of Coinbase', pp. 112-128.
 
 ---
-
 ## Q10. Differentiate between Metamask and Coinbase wallet. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -641,7 +631,7 @@ Universal EIP-1193 Request Standard: provider.request( { method, params  )
 Non-Custodial Invariant: PrivateKey_k ∉ Server_Databases( ConsenSys ∪ Coinbase ) }
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical interface defined above formalizes client-side provider detection and account abstraction standards across Web3 browser wallets. Extension wallets inject a standards-compliant provider object into the browser DOM, exposing asynchronous request methods to decentralized applications. Cryptographic transaction payloads are formatted into structured data hashes, signed via ECDSA, and validated against target network chain identifiers before remote node transmission.
 
 ### Worked Example & Practical Simulation
 
@@ -663,7 +653,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Web3 Wallets: MetaMask vs Coinbase Wallet Comparison', pp. 115-132.
 
 ---
-
 ## Q11. Compare Custodial and non-custodial crypto wallets. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -707,7 +696,7 @@ Non-Custodial Loss Expectation: E[Loss] = Value_Held · P( User_Key_Loss ∪ Phi
 Cryptographic Unforgeability: P( Third_Party_Signs_Tx | User_Maintains_Key ) ≈ 2^-256 ≈ 0
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical sovereignty invariant defined above encapsulates the foundational security axiom of cryptocurrency: total asset ownership is equivalent to exclusive private key possession. In custodial architectures, users possess contractual IOUs subject to counterparty bankruptcy risks. In non-custodial wallets, asymmetric cryptography ensures that state transitions can only be authorized by the mathematical holder of the private key, eliminating intermediary confiscation risks.
 
 ### Worked Example & Practical Simulation
 
@@ -729,7 +718,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 3: 'Crypto Wallets: Custodial vs Non-Custodial Paradigms', pp. 88-102.
 
 ---
-
 ## Q12. Define Hot wallet storage and Cold Wallet storage. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -773,7 +761,7 @@ Input: Raw_Unsigned_Tx ⇒ Transferred via USB / QR-Code to Secure Element
 Internal Execution: Signature = Sign_Isolated_PrivateKey( Hash( Raw_Unsigned_Tx ) )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical expressions defined above formalize the air-gap physical security model and Partially Signed Bitcoin Transaction (PSBT) workflow. By physically disconnecting the signing hardware from internet networks, the probability of remote network exploitation is bounded to zero. Unsigned transactions are transmitted across the air-gap via optical QR codes, signed offline by secure microcontroller chips, and returned for broadcast without exposing private key bytes to internet-connected host devices.
 
 ### Worked Example & Practical Simulation
 

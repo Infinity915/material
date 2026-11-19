@@ -3,7 +3,6 @@
 ### Complete Examination Solutions Guide (Engineered for Full 8/8 Marks)
 
 ---
-
 ## Q1. What is Ethereum? Discuss what it is, state its components, and explain how it differs from traditional cryptocurrencies. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -47,7 +46,7 @@ Account State Tuple: Account_State = ( Nonce, Balance, StorageRoot, CodeHash )
 Where Nonce is the transaction counter, Balance is measured in Wei (1 ETH = 10^18 Wei),
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above define the Ethereum world state transition function and four-tuple account state structure. The global state is modeled as a modified Merkle Patricia Trie mapping 160-bit account addresses to nonces, balances, storage roots, and code hashes. Applying a transaction triggers a deterministic state transition function $\sigma_{t+1} = \Upsilon(\sigma_t, T)$, executing bytecode instructions and updating world state with absolute mathematical reproducibility.
 
 ### Worked Example & Practical Simulation
 
@@ -69,7 +68,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 95-122.
 
 ---
-
 ## Q2. Enlist and explain the types of Ethereum networks (Mainnet, Testnet, Private Networks) and state their purposes. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -113,7 +111,7 @@ Official Chain Identifiers: Mainnet = 1 | Sepolia = 11155111 | Holesky = 17000 |
 Testnet Economic Value Invariant: Value(Testnet_ETH) = 0 USD (Distributed via Faucets)
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical expressions defined above formalize the EIP-155 replay protection standard across EVM blockchain networks. By incorporating the unique chain identifier directly into the digital signature recovery byte ($v = 2 \times \text{Chain\_ID} + 35$), transactions cryptographically bound to one network (such as Ethereum Mainnet) fail signature recovery on other chains (such as BSC or Polygon), completely eliminating cross-chain replay vulnerabilities.
 
 ### Worked Example & Practical Simulation
 
@@ -135,7 +133,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 123-145.
 
 ---
-
 ## Q3. Explain the Ethereum Virtual Machine (EVM) in detail and discuss its significance. (Frequency: 3) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -179,7 +176,7 @@ Storage Mutation Cost Rule: Gas(SSTORE_New) = 20,000 Gas  |  Gas(SSTORE_Update) 
 Memory Expansion Cost Function: C_mem(a) = 3 * a + floor( a^2 / 512 )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical tuple defined above formalizes the deterministic runtime machine state of the Ethereum Virtual Machine (EVM). At each execution step, the EVM evaluates current program counter, operand stack, transient memory, and persistent storage. Each opcode consumes a deterministic quantity of gas; if execution exhausts allocated gas, the EVM immediately halts, reverts all state modifications, and preserves network stability against infinite execution loops.
 
 ### Worked Example & Practical Simulation
 
@@ -201,7 +198,6 @@ The **Ethereum Virtual Machine** delivers a **secure**, **isolated**, and **dete
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 146-170.
 
 ---
-
 ## Q4. What is a smart contract? Define its purpose, types, and discuss a real-world scenario example. (Frequency: 7) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -245,7 +241,7 @@ Parametric Insurance Payout Invariant:
 Payout_Decision = ( Flight_Status == DELAYED ) AND ( Delay_Duration >= Threshold_Hours )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above model the autonomous conditional state logic and deterministic payout invariants of smart contracts. The contract acts as an immutable finite state machine whose state transitions occur strictly when verified cryptographic conditions or certified oracle data feeds are satisfied. The execution rule guarantees that insurance settlements or financial escrow transfers disburse funds automatically without reliance on discretionary human intermediaries.
 
 ### Worked Example & Practical Simulation
 
@@ -267,7 +263,6 @@ Smart **contracts** transform **passive** **agreements** into **dynamic**, self-
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 171-198.
 
 ---
-
 ## Q5. Describe the basic steps involved in deploying a smart contract on the Ethereum blockchain. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -315,7 +310,7 @@ Where RLP_Encode is Recursive Length Prefix serialization, and Sender_Nonce is t
 CREATE2 Alternative Address Formula (EIP-1014):
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formula defined above governs deterministic smart contract address computation during deployment on Ethereum. Contract addresses are not randomly generated; they are deterministically derived by hashing the deployer's 160-bit account address and account nonce using Keccak-256, taking the rightmost 160 bits. This mathematical determinism allows developers and decentralized protocols to calculate target deployment addresses before transactions are submitted.
 
 ### Worked Example & Practical Simulation
 
@@ -337,7 +332,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 199-224.
 
 ---
-
 ## Q6. Explain Solidity in detail and discuss how smart contracts are implemented using it. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -381,7 +375,7 @@ Where 'transfer(address,uint256)' yields Keccak hash 0xa9059cbb... -> Selector: 
 Checks-Effects-Interactions State Invariant:
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical expressions defined above detail Solidity 4-byte function selector derivation and the Checks-Effects-Interactions security pattern. The EVM routes contract calls by matching the first 4 bytes of call data against the Keccak-256 hash of the target function signature. The security pattern enforces that internal state balances are decremented before external ether transfers occur, mathematically neutralizing reentrancy attack vectors.
 
 ### Worked Example & Practical Simulation
 
@@ -403,7 +397,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 225-252.
 
 ---
-
 ## Q7. Explain the role of gas in the Ethereum network and discuss its significance in smart contract execution. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -447,7 +440,7 @@ Where Base_Fee is permanently burned and Priority_Fee is transferred to the bloc
 Dynamic Base Fee Adjustment Rule:
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical equations defined above formalize the dynamic transaction fee mechanism introduced in Ethereum's EIP-1559 upgrade. Total transaction fees are computed from gas consumed multiplied by the sum of the base fee and priority tip. The protocol algorithmically adjusts the base fee each block to target 50% block capacity, burning the base fee to introduce deflationary pressure while allocating the tip to validators for transaction inclusion.
 
 ### Worked Example & Practical Simulation
 
@@ -469,7 +462,6 @@ Worked Numerical Example of **Transaction** Fee and Burn Under EIP-1559: • Tra
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 253-278.
 
 ---
-
 ## Q8. Discuss Whisper (Decentralized Messaging Platform) and explain its purpose. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -513,7 +505,7 @@ Where higher PoW thresholds force senders to expend significant CPU work before 
 Message Envelope Tuple: Envelope = ( Expiry_Time, TTL, Topic_4Bytes, Data_Payload, Nonce )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical models defined above detail the anti-spam Proof-of-Work threshold and probabilistic topic routing mechanisms in the Whisper messaging protocol. Messages are encapsulated in encrypted envelopes whose required PoW difficulty scales linearly with payload size and time-to-live. Nodes evaluate envelope topics against probabilistic Bloom filter bit vectors, routing messages without revealing sender, recipient, or communication content.
 
 ### Worked Example & Practical Simulation
 
@@ -535,7 +527,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 4: 'Ethereum and Smart Contract Ecosystem', pp. 279-301.
 
 ---
-
 ## Q9. Discuss Swarm (Decentralized Storage Platform) and its contribution to decentralized storage. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -579,7 +570,7 @@ Kademlia XOR Metric Distance: Distance( Node_Address, Chunk_Hash ) = Node_Addres
 Retrieval Routing Latency Bound: Max_Hops = O( log_2( Total_Network_Nodes ) )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above formalize content-addressed chunk storage and Kademlia distributed hash table routing in the Swarm decentralized network. Files are split into deterministic 4 KB chunks, each addressed by its Keccak-256 hash. Network routing calculates the XOR distance between chunk hashes and node overlay identifiers, guaranteeing decentralized data persistence, fault tolerance, and censorship resistance without central storage servers.
 
 ### Worked Example & Practical Simulation
 

@@ -3,7 +3,6 @@
 ### Complete Examination Solutions Guide (Engineered for Full 8/8 Marks)
 
 ---
-
 ## Q1. Explain in detail the following blockchain platforms: Bitcoin, Ethereum, and Hyperledger. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -75,7 +74,6 @@ Bitcoin, Ethereum, and Hyperledger Fabric address distinct paradigms in distribu
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 1: 'Fundamentals of Blockchain' & Chapter 7: 'Consortium Blockchain & Hyperledger', pp. 1-28, 205-245.
 
 ---
-
 ## Q2. Write a note on Corda and R3 / Describe features of Corda Blockchain, justify what makes it different, and elaborate on CorDapps. (Frequency: 3) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -144,7 +142,6 @@ R3 **Corda** **uniquely** **addresses** the **privacy**, regulatory, and legal *
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 7: 'Consortium Blockchain: Overview of Corda & R3', pp. 235-248.
 
 ---
-
 ## Q3. Discuss the difference between Bitcoin and Ethereum. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -188,7 +185,7 @@ Ethereum Transaction Fee: Total_Fee = Gas_Used · ( Base_Fee + Priority_Fee )
 Bitcoin Block Subsidy: Subsidy(n) = 50 / ( 2^ floor( n / 210,000 )  ) BTC
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical models defined above contrast the conservation law of Bitcoin's UTXO ledger with Ethereum's stateful account transition function. In Bitcoin, transaction validity strictly enforces that the sum of input UTXOs equals the sum of newly generated outputs plus the unspent miner fee, eliminating state mutations. In Ethereum, state execution deterministically mutates global storage and balances through bytecode instructions, dynamically deducting computational gas to guarantee deterministic system state transitions.
 
 ### Worked Example & Practical Simulation
 
@@ -210,7 +207,6 @@ Practical **Transaction** Execution Comparison between **Bitcoin** and **Ethereu
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 1: 'The Bitcoin and the Blockchain' & Chapter 5: 'Smart Contracts and Ethereum', pp. 5-18, 140-175.
 
 ---
-
 ## Q4. State and discuss Bitcoin mining and elaborate on the functionality of miners. (Frequency: 1) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -254,7 +250,7 @@ Difficulty Adjustment Formula (Every 2,016 Blocks):
 Target_New = Target_Old · ( Actual_Time_Last_2016_Blocks / 20,160 Minutes )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above govern the computational proof-of-work mining puzzle and self-regulating difficulty adjustment of the Bitcoin network. The double SHA-256 inequality enforces that a block header hash must fall below the 256-bit network target. Every 2,016 blocks (~14 days), the difficulty retargeting equation scales the target by the ratio of actual elapsed time to expected time, strictly maintaining the 10-minute block interval and anchoring Bitcoin's 21 million supply schedule.
 
 ### Worked Example & Practical Simulation
 
@@ -276,7 +272,6 @@ Step-by-Step **Mining** Execution for **Bitcoin** Block #840,000 (The 2024 Halvi
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 1: 'Origin of Blockchain and Bitcoin Mining', pp. 8-22.
 
 ---
-
 ## Q5. Explain the role of IOTA in the context of the Internet of Things (IoT). (Frequency: 3) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -320,7 +315,7 @@ Transaction Verification Rule: Tx_New verifies Tx_Tip1 and Tx_Tip2
 IoT Transaction Fee: Fee_IOTA = 0.00 (Strictly Zero Fees)
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above formalize the Directed Acyclic Graph (DAG) tip-selection and confirmation weight mechanics in the IOTA Tangle. Rather than relying on miners, incoming transactions execute a biased random walk using Markov Chain Monte Carlo (MCMC) algorithms, validating two previous transactions. The transition probability dynamically weights tips with higher cumulative weight, providing asynchronous Byzantine fault tolerance and enabling zero-fee micro-transactions across massive IoT telemetry networks.
 
 ### Worked Example & Practical Simulation
 
@@ -342,7 +337,6 @@ By **replacing** sequential **blocks** and **miner** fees with a **feeless**, sc
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Blockchain Types: IOTA & Tangle Architecture for IoT', pp. 38-52.
 
 ---
-
 ## Q6. Explain the concept of Bitcoin and its role in Blockchain Technology, or discuss Bitcoin and Ethereum cryptocurrencies in brief. (Frequency: 3) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -386,7 +380,7 @@ Avalanche Sensitivity: Δ( 1 bit in Tx_k ) ⇒ Complete alteration of Merkle_Roo
 Attacker Re-Mining Complexity (51% Rule): P_catchup = ( q / p )^z }
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical expressions defined above formalize the immutable cryptographic hash linkage that binds consecutive blocks in the blockchain ledger. Each block header binds the cryptographic SHA-256 hash of the immediate previous block with the Merkle root of all confirmed transactions and an iterated nonce. Altering any single bit in a historical transaction cascades through the Merkle tree and invalidates every subsequent block hash, ensuring tamper-evident data integrity across all distributed nodes.
 
 ### Worked Example & Practical Simulation
 
@@ -408,7 +402,6 @@ Illustrating **Bitcoin**'s Immutability vs an Attempted **Ledger** Tampering Att
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 1: 'Origin of Blockchain & What Is Blockchain', pp. 2-15.
 
 ---
-
 ## Q7. Explain the types of Blockchain (Public, Private, Consortium) and state their advantages and disadvantages. (Frequency: 6) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -452,7 +445,7 @@ Nakamoto Coefficient of Decentralization: NC = min( k : ∑_i=1^k ( Power_i ) > 
 • Consortium Chains: NC = m (Federated threshold; requires N ≥ 3m + 1 consensus)
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above express the fundamental trade-off between network decentralization and transaction throughput across public, private, and consortium blockchains. The Nakamoto coefficient quantifies the minimum number of independent consensus entities required to compromise the network. While public networks maximize this coefficient at the expense of throughput, permissioned consortium ledgers bound participation to vetted entities, achieving thousands of transactions per second with sub-second finality.
 
 ### Worked Example & Practical Simulation
 
@@ -474,7 +467,6 @@ The tri-fold **taxonomy** of **public**, **private**, and consortium blockchains
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Types of Blockchain: Public, Private, and Consortium', pp. 28-36.
 
 ---
-
 ## Q8. Explain the difference between a permissioned and permissionless consensus approach. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -518,7 +510,7 @@ Permissioned PBFT Quorum Agreement Invariant: Q ≥ 2m + 1 Votes out of N = 3m +
 Permissioned Crash-Fault Raft Quorum: Q ≥ floor( N / 2 ) + 1 Valid Server Nodes
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical expressions defined above contrast the probabilistic Sybil resistance of permissionless mining with the deterministic voting quorums of permissioned consensus. In permissionless systems, block generation probability is strictly proportional to a miner's share of total computational hashrate. In contrast, permissioned networks rely on classical distributed systems theory, requiring a two-thirds majority quorum across authenticated PKI identities to guarantee immediate, fork-free transaction finality.
 
 ### Worked Example & Practical Simulation
 
@@ -540,7 +532,6 @@ Permissionless **consensus** sacrifices **throughput** to **achieve** open, **tr
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Decentralization and Consensus: Permissioned vs Permissionless', pp. 32-42.
 
 ---
-
 ## Q9. Explain consensus in blockchain in detail. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -584,7 +575,7 @@ FLP Impossibility Result (Fischer, Lynch, Paterson): In an asynchronous network,
 no deterministic consensus protocol can guarantee both Safety and Liveness with even 1 crash fault.
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above formalize the foundational safety and liveness invariants of distributed consensus protocols in blockchain networks. The safety condition guarantees that no two honest nodes ever commit conflicting transactions at the same ledger height, eliminating double spending. The liveness condition ensures that valid client requests eventually achieve finality, balancing the fundamental trade-offs mandated by the CAP theorem and the Blockchain Trilemma.
 
 ### Worked Example & Practical Simulation
 
@@ -606,7 +597,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Blockchain Types and Consensus Mechanism', pp. 25-45.
 
 ---
-
 ## Q10. Illustrate and discuss different types of consensus algorithms used in blockchain technology. (Frequency: 3) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -650,7 +640,7 @@ PBFT Byzantine Quorum Invariant: N ≥ 3m + 1,   Quorum_Threshold = 2m + 1
 Raft Crash Quorum Invariant: N ≥ 2f + 1,   Quorum_Threshold = f + 1
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above establish the fault-tolerance thresholds and economic constraints across diverse blockchain consensus mechanisms. Proof of Work requires the honest majority to command over 50% of computational hashrate to prevent chain reorganizations. Proof of Stake deters double-signing through slashing invariants that confiscate bonded capital, while PBFT and Raft enforce rigorous quorum thresholds ($N \ge 3f + 1$) to achieve deterministic agreement in permissioned networks.
 
 ### Worked Example & Practical Simulation
 
@@ -672,7 +662,6 @@ The **diversity** of consensus **algorithms** allows **blockchain** architects t
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Consensus Mechanisms: PoW, PoS, PoA, PoB, and BFT', pp. 35-50.
 
 ---
-
 ## Q11. Explain Proof of Work in detail or with an example. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -716,7 +705,7 @@ Difficulty Metric: Difficulty = Target_genesis / Target_current
 Expected Hashes to Solve a Block: E[Hashes] = 2^256 / Target = Difficulty · 2^32
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above govern the SHA-256 Proof-of-Work mining puzzle and dynamic difficulty adjustment. Miners iteratively hash the block header across nonce values until the resulting 256-bit integer is strictly less than the target threshold. Every 2,016 blocks, the protocol evaluates the ratio between actual mining time and the 14-day baseline, retargeting the difficulty to ensure a constant 10-minute block interval despite fluctuating global hashrate.
 
 ### Worked Example & Practical Simulation
 
@@ -738,7 +727,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Proof of Work Consensus in Detail', pp. 36-48.
 
 ---
-
 ## Q12. Explain Proof of Stake in detail or with an example. (Frequency: 5) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -782,7 +770,7 @@ Slashing Invariant for Double Signing:
 If Attest( Slot_k, Block_A ) ∧ Attest( Slot_k, Block_B ) with Block_A ≠ Block_B ⇒ Slash( Stake_i )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above govern the validator selection probability and economic slashing mechanisms in Proof of Stake. The probability of an active validator being selected as block proposer is directly proportional to its bonded stake relative to the global stake pool. Cryptographic slashing invariants strictly punish Byzantine behavior—such as equivocation or proposing conflicting blocks—by burning a deterministic fraction of the validator's collateral to ensure absolute economic security.
 
 ### Worked Example & Practical Simulation
 
@@ -804,7 +792,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Proof of Stake Consensus & Slashing Rules', pp. 48-58.
 
 ---
-
 ## Q13. Explain Proof of Activity. (Frequency: 4) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -848,7 +835,7 @@ Stakeholder Selection Probability: P( User_i selected ) = Balance_i / Total_Coin
 Block Validation Quorum: Block_Valid ⇔ Header_Valid_PoW ∧ ( ∑_k=1^N Signatures_PoS == N )
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical models defined above detail the hybrid two-phase consensus pipeline of Proof of Activity (PoA). In Phase 1, compute-bound PoW miners solve an empty block header puzzle to maintain difficulty-based pacing. In Phase 2, the winning hash serves as a deterministic pseudo-random seed to select active stakeholders from the ledger. Once the required quorum of selected stakeholders appends digital signatures, the block achieves finality, neutralizing both hashrate monopolies and offline validator bottlenecks.
 
 ### Worked Example & Practical Simulation
 
@@ -870,7 +857,6 @@ Step-by-**Step Proof** of Activity Consensus Execution: • Step 1 (PoW): **Mine
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Hybrid Consensus: Proof of Activity', pp. 58-64.
 
 ---
-
 ## Q14. Explain Proof of Burn. (Frequency: 2) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -914,7 +900,7 @@ Block Minting Selection Probability: P( Miner_i wins block ) = H_virtual, i(t) /
 Eater Address Invariant: P( Private_Key( Address_Eater ) is found ) ≈ 2^-256 ≈ 0
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical expressions defined above formalize the virtual mining rig economics and exponential decay functions in Proof of Burn (PoB). Miners permanently destroy native cryptocurrency by dispatching coins to unspendable eater addresses, generating virtual hashrate without physical hardware. An exponential decay multiplier steadily depreciates this virtual computing power over time, compelling miners to continually burn coins to maintain block-winning probability and ensuring long-term economic equilibrium.
 
 ### Worked Example & Practical Simulation
 
@@ -936,7 +922,6 @@ The mathematical formulation and algorithmic **parameters** defined above govern
 **Textbook Reference:** Subramanian, C., George, A. A., Ranade, A., & Vasudevan, S. K. (Universities Press), Chapter 2: 'Alternative Consensus: Proof of Burn', pp. 64-70.
 
 ---
-
 ## Q15. Discuss the Byzantine General problem and explain its significance/consequences in the context of blockchain consensus. (Frequency: 6) [8 Marks]
 
 ### Introduction & Core Intuition
@@ -980,7 +965,7 @@ PBFT Quorum Threshold: Quorum = 2m + 1 Messages Required for Final Commit
 Nakamoto PoW Byzantine Fault Tolerance Threshold:
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations defined above define the theoretical bounds of the Byzantine Generals Problem in distributed computing. Classical agreement protocols prove that reliable consensus across asynchronous networks is mathematically impossible if one-third or more of nodes are Byzantine ($N \ge 3m + 1$). Nakamoto Proof of Work solves this classical dilemma by coupling longest-chain probabilistic convergence with computational work, ensuring that honest nodes reach immutable agreement even under arbitrary adversarial network delays.
 
 ### Worked Example & Practical Simulation
 
