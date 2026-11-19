@@ -88,7 +88,7 @@ R3 was **founded** in 2014 as an **elite** **consortium** **comprising** over 20
 
 ### **What Makes Corda Fundamentally Different from Traditional Blockchains**
 
-Corda differs from conventional blockchains in four architectural **dimensions**: (1) **Zero Global Broadcast** (Point-to-Point Messaging): In Corda, there is no global **distributed ledger** shared by all **nodes**. Instead, **transaction** data is shared strictly on a Need-to-Know basis**—only the parties participating in a transaction (and designated regulators) receive and store the data; (2) **No Native Cryptocurrency or Mining**: Corda eliminates volatile tokens, mining fees, and compute-heavy Proof of Work; (3) **Legal Enforceability ('Ricardian Contracts')**: Smart contracts in Corda are explicitly linked to legally binding prose contracts written by corporate attorneys, ensuring legal validity in real-world courts; and (4) **Sub-Second Deterministic Finality**: Transactions achieve immediate, irrevocable finality without the risk of blockchain forks.
+Corda differs from conventional blockchains in four architectural **dimensions**: (1) **Zero Global Broadcast** (Point-to-Point Messaging): In Corda, there is no global **distributed ledger** shared by all **nodes**. Instead, **transaction** data is shared strictly on a **Need-to-Know basis**—only the parties participating in a transaction (and designated regulators) receive and store the data; (2) **No Native Cryptocurrency or Mining**: Corda eliminates volatile tokens, mining fees, and compute-heavy Proof of Work; (3) **Legal Enforceability ('Ricardian Contracts')**: Smart contracts in Corda are explicitly linked to legally binding prose contracts written by corporate attorneys, ensuring legal validity in real-world courts; and (4) **Sub-Second Deterministic Finality**: Transactions achieve immediate, irrevocable finality without the risk of blockchain forks.
 
 ### **Core Architectural Features of the Corda Platform**
 
@@ -117,9 +117,10 @@ Corda State Transition: State_New = Tx( State_Input_1, ..., State_Input_m )
 Deterministic Contract Rule: Verify( Tx ) == True ⇔ ∀ Clause ∈ Contract, Clause( Tx ) == Valid
 Notary Uniqueness Invariant: State_Input ∉ Consumed_State_Registry
 Need-to-Know Privacy Bound: Visibility( Node_k, Tx ) = True ⇔ Node_k ∈ { Signers(Tx) ∪ Observers(Tx) }
+Consensus Latency: T_Corda = T_flow_roundtrip + T_notary_signing ≈ 200ms to 800ms
 ```
 
-The mathematical formulation and algorithmic **parameters** defined above govern the runtime behavior of the system. Each parameter serves an exact role: primary terms scale throughput, penalty terms enforce **regularization** constraints, and **optimization** objectives drive steady **convergence** toward the **global minimum**.
+The mathematical formulations and deterministic state transition rules defined above govern the execution integrity of the Corda platform. The contract verification invariant ensures that every proposed transaction satisfies all deterministic legal clauses before any signature is gathered. The notary uniqueness invariant guarantees double-spending prevention by verifying that input states are unconsumed in the global registry, ensuring sub-second deterministic finality without requiring global ledger broadcasting.
 
 ### Worked Example & Practical Simulation
 
@@ -129,10 +130,12 @@ CorDapp **Execution** for an **International Letter** of Credit (LC) between Ban
 
 | Architectural Feature | R3 Corda | Ethereum (Public DApps) | Hyperledger Fabric |
 | :--- | :--- | :--- | :--- |
-| Target Industry | Regulated Financial Institutions & Enterprise Trade | General public DApps, DeFi, NFTs, and gaming | Cross-industry B2B enterprise consortia |
-| Ledger Scope | Bilateral / Point-to-Point (No global ledger) | Global public ledger (Every node sees all state) | Channel-based private sub-ledgers |
-| Consensus Mechanism | Notary Clusters (Validate Uniqueness & Validity) | Proof of Stake (Global validator committee) | Pluggable Ordering Service (Raft, BFT) |
-| Smart Contract Code | Kotlin / Java bytecode linked to legal prose | Solidity / Vyper bytecode on EVM | Chaincode in Go, Java, or Node.js |
+| **Target Industry** | Regulated Financial Institutions & Enterprise Trade | General public DApps, DeFi, NFTs, and gaming | Cross-industry B2B enterprise consortia |
+| **Ledger Scope** | Bilateral / Point-to-Point (No global ledger) | Global public ledger (Every node sees all state) | Channel-based private sub-ledgers |
+| **Consensus Mechanism** | Notary Clusters (Validate Uniqueness & Validity) | Proof of Stake (Global validator committee) | Pluggable Ordering Service (Raft, BFT) |
+| **Smart Contract Code** | Kotlin / Java bytecode linked to legal prose | Solidity / Vyper bytecode on EVM | Chaincode in Go, Java, or Node.js |
+| **Native Token / Mining** | Zero native cryptocurrency; zero mining fees | Ether (ETH) required to pay dynamic Gas | Zero native cryptocurrency required |
+| **Transaction Privacy** | Absolute privacy (Shared only with involved peers) | Zero privacy on base layer (100% public visibility) | Channel-level privacy between channel members |
 
 ### Concluding Exam Takeaway
 
