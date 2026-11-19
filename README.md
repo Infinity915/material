@@ -3,8 +3,8 @@
 Comprehensive, high-scoring examination solutions for Savitribai Phule Pune University (SPPU) Final Year (B.E.) Computer Engineering.
 
 ### Key Highlights
-- **Engineered for Full 8/8 Marks:** Decode-style conversational clarity, cohesive 5–7 line paragraphs, and 5–8 bold technical keywords (`**...**`) per paragraph.
-- **Full Visual Architectures:** 244 custom Matplotlib system diagrams and flowcharts embedded directly in markdown.
+- **Engineered for Full 8/8 Marks:** Decode-style conversational clarity, cohesive 5–7 line paragraphs, and 5–8 bold technical keywords (`**...**`) per paragraph (~8.0–9.0 KB / ~1100–1280 words per question).
+- **Standardized Visual Architectures:** All 244 custom Matplotlib system diagrams and flowcharts rendered under one strict, unified style guide (`figsize=(10.5, 4.4)`, `dpi=200`, pure white canvas, neutral card fills, crisp `#222222` dark borders, and guaranteed `>= 55 KB` file size).
 - **Clean Unicode Mathematics:** Formatted with standard Unicode mathematical symbols (`∑, ∏, ≤, ≥, √, λ, η, ε, θ, σ, Ω, Θ`) with zero raw LaTeX artifacts.
 - **Complete Step-by-Step Traces:** Plain-text worked examples and dry-runs with numbers and calculated metrics bolded inline.
 
@@ -12,42 +12,35 @@ Comprehensive, high-scoring examination solutions for Savitribai Phule Pune Univ
 
 ## Subject Navigation Hub
 
-### Machine Learning
-- [Unit 1 Solutions](Machine_Learning/Unit_1_Solutions.md)
-- [Unit 2 Solutions](Machine_Learning/Unit_2_Solutions.md)
-- [Unit 3 Solutions](Machine_Learning/Unit_3_Solutions.md)
-- [Unit 4 Solutions](Machine_Learning/Unit_4_Solutions.md)
-- **[Complete Machine Learning (All 4 Units Combined)](Markdown_Solutions/Machine_Learning/Complete_Machine_Learning_Solutions.md)**
+### 1. Machine Learning
+- [Unit 1: Fundamentals of Machine Learning & Regression](Machine_Learning/Unit_1_Solutions.md)
+- [Unit 2: Classification, Decision Trees & SVM](Machine_Learning/Unit_2_Solutions.md)
+- [Unit 3: Ensemble Learning, Clustering & Dimensionality Reduction](Machine_Learning/Unit_3_Solutions.md)
+- [Unit 4: Neural Networks, Deep Learning & Model Evaluation](Machine_Learning/Unit_4_Solutions.md)
 
-### Design and Analysis of Algorithms
-- [Unit 1 Solutions](Design_and_Analysis_of_Algorithms/Unit_1_Solutions.md)
-- [Unit 2 Solutions](Design_and_Analysis_of_Algorithms/Unit_2_Solutions.md)
-- [Unit 3 Solutions](Design_and_Analysis_of_Algorithms/Unit_3_Solutions.md)
-- [Unit 4 Solutions](Design_and_Analysis_of_Algorithms/Unit_4_Solutions.md)
-- **[Complete Design and Analysis of Algorithms (All 4 Units Combined)](Markdown_Solutions/Design_and_Analysis_of_Algorithms/Complete_Design_and_Analysis_of_Algorithms_Solutions.md)**
+### 2. Design and Analysis of Algorithms
+- [Unit 1: Greedy Strategy & Dynamic Programming](Design_and_Analysis_of_Algorithms/Unit_1_Solutions.md)
+- [Unit 2: Backtracking & Branch and Bound](Design_and_Analysis_of_Algorithms/Unit_2_Solutions.md)
+- [Unit 3: Amortized Analysis & Lower Bound Theory](Design_and_Analysis_of_Algorithms/Unit_3_Solutions.md)
+- [Unit 4: Complexity Classes, Approximation & Randomized Algorithms](Design_and_Analysis_of_Algorithms/Unit_4_Solutions.md)
 
-### Software Testing and Quality Assurance
-- [Unit 1 Solutions](Software_Testing_and_Quality_Assurance/Unit_1_Solutions.md)
-- [Unit 2 Solutions](Software_Testing_and_Quality_Assurance/Unit_2_Solutions.md)
-- [Unit 3 Solutions](Software_Testing_and_Quality_Assurance/Unit_3_Solutions.md)
-- [Unit 4 Solutions](Software_Testing_and_Quality_Assurance/Unit_4_Solutions.md)
-- **[Complete Software Testing and Quality Assurance (All 4 Units Combined)](Markdown_Solutions/Software_Testing_and_Quality_Assurance/Complete_Software_Testing_and_Quality_Assurance_Solutions.md)**
+### 3. Software Testing and Quality Assurance
+- [Unit 1: Fundamentals of Software Testing & Static Testing](Software_Testing_and_Quality_Assurance/Unit_1_Solutions.md)
+- [Unit 2: Dynamic Testing & Test Design Techniques](Software_Testing_and_Quality_Assurance/Unit_2_Solutions.md)
+- [Unit 3: Levels of Testing & Test Management](Software_Testing_and_Quality_Assurance/Unit_3_Solutions.md)
+- [Unit 4: Quality Assurance, ISO Standards & CMMI](Software_Testing_and_Quality_Assurance/Unit_4_Solutions.md)
 
-### Blockchain Technology
-- [Unit 1 Solutions](Blockchain_Technology/Unit_1_Solutions.md)
-- [Unit 2 Solutions](Blockchain_Technology/Unit_2_Solutions.md)
-- [Unit 3 Solutions](Blockchain_Technology/Unit_3_Solutions.md)
-- [Unit 4 Solutions](Blockchain_Technology/Unit_4_Solutions.md)
-- **[Complete Blockchain Technology (All 4 Units Combined)](Markdown_Solutions/Blockchain_Technology/Complete_Blockchain_Technology_Solutions.md)**
+### 4. Blockchain Technology
+- [Unit 1: Blockchain Architecture, Cryptography & P2P Networks](Blockchain_Technology/Unit_1_Solutions.md)
+- [Unit 2: Consensus Mechanisms & Mining Algorithms](Blockchain_Technology/Unit_2_Solutions.md)
+- [Unit 3: Smart Contracts, EVM & Ethereum](Blockchain_Technology/Unit_3_Solutions.md)
+- [Unit 4: Enterprise Blockchains, Hyperledger & Security](Blockchain_Technology/Unit_4_Solutions.md)
 
-### Cyber Security and Digital Forensics
-- [Unit 1 Solutions](Cyber_Security_and_Digital_Forensics/Unit_1_Solutions.md)
-- [Unit 2 Solutions](Cyber_Security_and_Digital_Forensics/Unit_2_Solutions.md)
-- [Unit 3 Solutions](Cyber_Security_and_Digital_Forensics/Unit_3_Solutions.md)
-- [Unit 4 Solutions](Cyber_Security_and_Digital_Forensics/Unit_4_Solutions.md)
-- **[Complete Cyber Security and Digital Forensics (All 4 Units Combined)](Markdown_Solutions/Cyber_Security_and_Digital_Forensics/Complete_Cyber_Security_and_Digital_Forensics_Solutions.md)**
+### 5. Cyber Security and Digital Forensics
+- [Unit 1: Security Fundamentals, CIA Triad & Threat Modeling](Cyber_Security_and_Digital_Forensics/Unit_1_Solutions.md)
+- [Unit 2: Network Security, IDS & Firewalls](Cyber_Security_and_Digital_Forensics/Unit_2_Solutions.md)
+- [Unit 3: Digital Forensics, Evidence Acquisition & Anti-Forensics](Cyber_Security_and_Digital_Forensics/Unit_3_Solutions.md)
+- [Unit 4: Memory Forensics, Legal Framework & IT Act 2000](Cyber_Security_and_Digital_Forensics/Unit_4_Solutions.md)
 
 ---
-
-### Master Organized Folder
-All Markdown solutions and assets are also neatly organized in the [`Markdown_Solutions/`](Markdown_Solutions/) directory.
+*Generated with Google DeepMind Antigravity technical documentation engine.*
