@@ -10,3 +10,4 @@ textbooks/
 
 # Local Build & Audit Scripts
 *.py
+final/
