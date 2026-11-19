@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local Reference Sources & Datasets
+decodes/
+pyqs/
+shortlisted/
+textbooks/
+
+# Local Build & Audit Scripts
+*.py
